@@ -38,7 +38,14 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog",  #new
+    "accounts", #new
 ]
+
+
+# django_project/settings.py
+LOGIN_REDIRECT_URL = "home" # new
+LOGOUT_REDIRECT_URL = "home" # new
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
